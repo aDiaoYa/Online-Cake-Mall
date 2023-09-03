@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>商品列表</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="css/bootstrap.css"/> 
+</head>
+<body>
+<div class="container-fluid">
+
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="">蛋糕店后台</a>
+			</div>
+			<div>
+				<ul class="nav navbar-nav">
+					<li ><a href="orderList.action">订单管理</a></li>
+					<li ><a href="userList.action">客户管理</a></li>
+					<li class="active"><a href="goodList.action">商品管理</a></li>
+					<li ><a href="typeList.action">类目管理</a></li>
+					<li ><a href="adminRe.action">修改密码</a></li>
+					<li><a href="logout.action">退出</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<div class="text-right"><a class="btn btn-warning" href="goodAdd.action">添加商品</a></div>
+	
+	<br>
+		
+	<ul role="tablist" class="nav nav-tabs">
+        <li class="active" role="presentation"><a href="goodList.action">全部商品</a></li>
+        <li  role="presentation"><a href="goodList.action?status=1">条幅推荐</a></li>
+        <li  role="presentation"><a href="goodList.action?status=2">热销推荐</a></li>
+        <li  role="presentation"><a href="goodList.action?status=3">新品推荐</a></li>
+    </ul>
+    
+    
+    
+    
+	
+	<br>
+
+	<table class="table table-bordered table-hover">
+
+	<tr>
+		<th width="5%">ID</th>
+		<th width="10%">图片</th>
+		<th width="10%">名称</th>
+		<th width="20%">介绍</th>
+		<th width="10%">价格</th>
+		<th width="10%">类目</th>
+		<th width="25%">操作</th>
+	</tr>
+	
+	
+         <tr>
+         	<td><p>180</p></td>
+         	<td><p><a href="../index/detail.action?goodid=180" target="_blank"><img src="..//picture/14-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=180" target="_blank">意大利芝士饼干</a></p></td>
+         	<td><p>采用帕玛森芝士为主要原材料制作的意大利芝士饼,奶香浓郁,鲜香可口.</p></td>
+         	<td><p>39</p></td>
+         	<td><p>零食系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=180">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=180">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=180">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=180">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=180">删除</a>
+			</td>
+       	</tr>
+     
+         <tr>
+         	<td><p>179</p></td>
+         	<td><p><a href="../index/detail.action?goodid=179" target="_blank"><img src="..//picture/13-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=179" target="_blank">蜂蜜蛋糕</a></p></td>
+         	<td><p>蛋黄与蜂蜜,淡奶油共同演绎的曼妙之旅.口感Q糯浓郁,回味绵软柔长.皱巴巴的造型,甜蜜蜜的感受.</p></td>
+         	<td><p>36</p></td>
+         	<td><p>零食系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=179">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=179">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=179">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=179">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=179">删除</a>
+			</td>
+       	</tr>
+     
+         <tr>
+         	<td><p>178</p></td>
+         	<td><p><a href="../index/detail.action?goodid=178" target="_blank"><img src="..//picture/12-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=178" target="_blank">青森芝士条</a></p></td>
+         	<td><p>青森芝士和风轻拂,,奶香浓郁,质地柔滑,口感细腻.</p></td>
+         	<td><p>36</p></td>
+         	<td><p>零食系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=178">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=178">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=178">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=178">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=178">删除</a>
+			</td>
+       	</tr>
+     
+         <tr>
+         	<td><p>177</p></td>
+         	<td><p><a href="../index/detail.action?goodid=177" target="_blank"><img src="..//picture/11-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=177" target="_blank">半熟芝士</a></p></td>
+         	<td><p>为了保证芝士的香醇,半熟芝士借鉴日本温泉煮鸡蛋的做法,把芝士,牛奶,鸡蛋,天然奶油,砂糖,小麦粉拌成面糊,通过水浴蒸烤,保证芝士蛋糕细嫩,柔软,留住芝士的香醇细滑.</p></td>
+         	<td><p>38</p></td>
+         	<td><p>零食系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=177">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=177">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=177">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=177">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=177">删除</a>
+			</td>
+       	</tr>
+     
+         <tr>
+         	<td><p>176</p></td>
+         	<td><p><a href="../index/detail.action?goodid=176" target="_blank"><img src="..//picture/10-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=176" target="_blank">玫瑰舒芙蕾</a></p></td>
+         	<td><p>优选法国芝士,奶香浓郁,质地柔滑,口感细腻.法国芝士有助于提升糕点的整体口感,完美平衡酸度与甜味,制作出的糕点更加洁白纯美.</p></td>
+         	<td><p>28</p></td>
+         	<td><p>零食系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=176">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=176">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=176">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=176">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=176">删除</a>
+			</td>
+       	</tr>
+     
+         <tr>
+         	<td><p>175</p></td>
+         	<td><p><a href="../index/detail.action?goodid=175" target="_blank"><img src="..//picture/9-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=175" target="_blank">草莓冰淇淋</a></p></td>
+         	<td><p>甜郁草莓配合冰淇淋的丝滑口感,让清爽与浪漫在爱情果园激情碰撞,恋上草莓,这份心情,美妙非凡.
+主口味:草莓口味 主要原料:草莓果溶 草莓  甜度:三星（满五星） 最佳食用温度：-12至-15摄氏度</p></td>
+         	<td><p>299</p></td>
+         	<td><p>冰淇淋系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=175">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=175">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=175">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=175">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=175">删除</a>
+			</td>
+       	</tr>
+     
+         <tr>
+         	<td><p>174</p></td>
+         	<td><p><a href="../index/detail.action?goodid=174" target="_blank"><img src="..//picture/8-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=174" target="_blank">小熊乐园</a></p></td>
+         	<td><p>走进小熊乐园,与可爱的小熊一起准备过冬的食物吧,摘颗草莓藏放在巧克力做的房子里,好朋友一起分享劳动的果实.
+主口味:草莓奶油味 主要原料:乳脂奶油,纯巧克力,朗姆酒,幼砂糖,鲜草莓 甜度:二星（满五星） 最佳食用温度：5-7摄氏度</p></td>
+         	<td><p>299</p></td>
+         	<td><p>儿童系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=174">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=174">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=174">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=174">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=174">删除</a>
+			</td>
+       	</tr>
+     
+         <tr>
+         	<td><p>173</p></td>
+         	<td><p><a href="../index/detail.action?goodid=173" target="_blank"><img src="..//picture/14-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=173" target="_blank">意大利芝士饼干</a></p></td>
+         	<td><p>采用帕玛森芝士为主要原材料制作的意大利芝士饼,奶香浓郁,鲜香可口.</p></td>
+         	<td><p>39</p></td>
+         	<td><p>零食系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=173">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=173">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=173">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=173">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=173">删除</a>
+			</td>
+       	</tr>
+     
+         <tr>
+         	<td><p>172</p></td>
+         	<td><p><a href="../index/detail.action?goodid=172" target="_blank"><img src="..//picture/13-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=172" target="_blank">蜂蜜蛋糕</a></p></td>
+         	<td><p>蛋黄与蜂蜜,淡奶油共同演绎的曼妙之旅.口感Q糯浓郁,回味绵软柔长.皱巴巴的造型,甜蜜蜜的感受.</p></td>
+         	<td><p>36</p></td>
+         	<td><p>零食系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=172">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=172">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=172">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=172">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=172">删除</a>
+			</td>
+       	</tr>
+     
+         <tr>
+         	<td><p>171</p></td>
+         	<td><p><a href="../index/detail.action?goodid=171" target="_blank"><img src="..//picture/12-1.jpg" width="100px" height="100px"></a></p></td>
+         	<td><p><a href="../index/detail.action?goodid=171" target="_blank">青森芝士条</a></p></td>
+         	<td><p>青森芝士和风轻拂,,奶香浓郁,质地柔滑,口感细腻.</p></td>
+         	<td><p>36</p></td>
+         	<td><p>零食系列</p></td>
+			<td>
+				<p>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=1&tops.good.id=171">加入条幅</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=2&tops.good.id=171">加入热销</a>
+				
+				<a class="btn btn-primary" href="topSave.action?tops.type=3&tops.good.id=171">加入新品</a>
+				</p>
+				<a class="btn btn-success" href="goodEdit.action?id=171">修改</a>
+				<a class="btn btn-danger" href="goodDelete.action?good.id=171">删除</a>
+			</td>
+       	</tr>
+     
+     
+</table>
+
+<br><div style='text-align:center;'>
+<a class='btn btn-info' disabled >首页</a>
+<a class='btn btn-info' disabled >上一页</a>
+<h2 style='display:inline;'>[1/18]</h2>
+<h2 style='display:inline;'>[180]</h2>
+<a class='btn btn-info' href='http://localhost:8080/test_cakeshop_jsp/admin/goodList.action?page=2'>下一页</a>
+<a class='btn btn-info' href='http://localhost:8080/test_cakeshop_jsp/admin/goodList.action?page=18'>尾页</a>
+<input type='text' class='form-control' style='display:inline;width:60px;' value=''/><a class='btn btn-info' href='javascript:void(0);' onclick='location.href="http://localhost:8080/test_cakeshop_jsp/admin/goodList.action?page="+(this.previousSibling.value)+""'>GO</a>
+</div>
+<br>
+</div>
+</body>
+</html>

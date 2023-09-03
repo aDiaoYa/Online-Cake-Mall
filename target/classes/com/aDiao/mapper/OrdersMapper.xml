@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aDiao.mapper.OrdersMapper">
+
+    <!--映射数据库字段和javabean实体属性    情况：（数据库字段名称和实体属性名称不同）-->
+    <resultMap id="orderItemMap" type="com.aDiao.entity.Orderitem">
+        <result column="gname" property="goodsName"></result>
+    </resultMap>
+
+    <select id="selectallorderitem" resultMap="orderItemMap">
+        select o.iid,o.iprice,o.iamount,g.gname from orderitem o join goods g on o.goods_id = g.gid where orders_id = #{oid}
+    </select>
+
+</mapper>
